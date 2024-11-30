@@ -12,7 +12,7 @@ import { UserUnputComponent } from "./user-unput/user-unput.component";
 export class AppComponent {
   title = 'Investment-Calculator';
 
-  calculateInvestmentResults(data:{
+  onCalculateInvestmentResults(data:{
     initialInvestment: number,
     duration: number,
     expectedReturn: number,
@@ -38,6 +38,7 @@ export class AppComponent {
         totalAmountInvested: initialInvestment + annualInvestment * year,
       });
     }
-    return annualData;
+    //return annualData;
+    console.log(annualData);
   }
 }
